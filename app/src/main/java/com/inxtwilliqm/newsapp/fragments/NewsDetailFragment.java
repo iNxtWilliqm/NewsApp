@@ -22,14 +22,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NewsDetailFragment extends Fragment {
-    private static final String ARG_NEWS_ITEM = "news_item";
-
-    private News news;
     private TextView newsTitle;
     private TextView newsDescription;
     private ImageView newsImage;
     private RecyclerView relatedNewsRecyclerView;
-    private List<News> relatedNews;
 
     public static NewsDetailFragment newInstance(String title, String description, String category, int image) {
         NewsDetailFragment fragment = new NewsDetailFragment();
